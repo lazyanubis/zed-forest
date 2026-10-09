@@ -1,0 +1,41 @@
+{
+  "theme": "Forest",
+  "inlay_hints": {
+    "show_background": true
+  },
+  "languages": {
+    "Rust": {
+      "semantic_tokens": "combined",
+      "inlay_hints": {
+        "enabled": true
+      }
+    }
+  },
+  "global_lsp_settings": {
+    "semantic_token_rules": [
+      {
+        "token_type": "function",
+        "token_modifiers": ["declaration"],
+        "style": ["function.definition"]
+      },
+      {
+        "token_type": "method",
+        "token_modifiers": ["declaration"],
+        "style": ["function.definition"]
+      },
+      {
+        "token_type": "variable",
+        "token_modifiers": ["mutable"],
+        "style": ["variable.mutable"]
+      },
+      {
+        "token_type": "procMacro",
+        "style": ["function.macro", "function.special"]
+      },
+      {
+        "token_type": "macroBang",
+        "style": ["function.macro", "function.special"]
+      }
+    ]
+  }
+}
