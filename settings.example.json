@@ -1,5 +1,9 @@
 {
   "theme": "Forest",
+  "buffer_font_family": "Lilex",
+  "buffer_font_size": 12,
+  "buffer_font_weight": 400,
+  "buffer_line_height": { "custom": 1.666667 },
   "inlay_hints": {
     "show_background": true
   },
