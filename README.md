@@ -4,11 +4,11 @@
 
 A deep forest green theme for [Zed](https://zed.dev), with teal keywords, yellow-green types, and separate colors for constants, numbers, and booleans. The extension provides one dark theme named **Forest**.
 
-**Status:** version 0.1.0, available as a development extension. It has not been published to the official Zed extension registry.
+**Status:** version 0.1.1, available as a development extension. It has not been published to the official Zed extension registry. See the [changelog](CHANGELOG.md) for the contrast improvements.
 
 ![Forest in the Zed Theme Builder](preview.jpg)
 
-This screenshot comes from the web Theme Builder. Its preview does not reproduce every desktop syntax capture, font weight, or language-server semantic token. Desktop installation and rendering have not yet been manually verified.
+This screenshot shows version 0.1.0 in the web Theme Builder; it does not include the 0.1.1 contrast improvements. The web preview does not reproduce every desktop syntax capture, font weight, or language-server semantic token. Desktop installation and rendering have not yet been manually verified.
 
 ## Install
 

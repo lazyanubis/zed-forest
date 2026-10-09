@@ -1,6 +1,6 @@
 # Publishing Forest
 
-Forest is not yet listed in the official Zed extension registry. The repository is prepared as a theme extension; manual desktop verification remains outstanding.
+Forest 0.1.1 is not yet listed in the official Zed extension registry. The repository is prepared as a theme extension; manual desktop verification remains outstanding.
 
 Before submission, review the current [prerequisites](https://zed.dev/docs/extensions/publishing/prerequisites), confirm `forest-theme` is available, and manually test the exact commit to be submitted in Zed. Check installation, theme selection, syntax colors, terminal colors, and removal. Record the tested Zed version and commit.
 
@@ -13,7 +13,7 @@ Follow the official [publishing guide](https://zed.dev/docs/extensions/publishin
    ```toml
    [forest-theme]
    submodule = "extensions/forest-theme"
-   version = "0.1.0"
+   version = "0.1.1"
    ```
 
 4. Run `pnpm sort-extensions`, review the changes, then submit one extension per PR.
