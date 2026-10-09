@@ -4,11 +4,13 @@
 
 A deep forest green theme for [Zed](https://zed.dev), with teal keywords, yellow-green types, and separate colors for constants, numbers, and booleans. The extension provides one dark theme named **Forest**.
 
-**Status:** version 0.1.1, available as a development extension. It has not been published to the official Zed extension registry. See the [changelog](CHANGELOG.md) for the contrast improvements.
+**Status:** version 0.1.1, available as a development extension. [Registry PR #7928](https://github.com/zed-industries/extensions/pull/7928) has been submitted and is awaiting review; Forest is not yet published in the official Zed extension registry. See the [changelog](CHANGELOG.md) for the contrast improvements.
 
 ![Forest in the Zed Theme Builder](preview.jpg)
 
-This screenshot shows version 0.1.0 in the web Theme Builder; it does not include the 0.1.1 contrast improvements. The web preview does not reproduce every desktop syntax capture, font weight, or language-server semantic token. Desktop installation and rendering have not yet been manually verified.
+This screenshot shows version 0.1.0 in the web Theme Builder; it does not include the 0.1.1 contrast improvements. The web preview does not reproduce every desktop syntax capture, font weight, or language-server semantic token.
+
+On 2026-10-09, the owner manually installed and selected Forest 0.1.1 in Zed 1.23.2 on macOS. Subsequent computer-assisted UI inspection checked JSON and a standalone TypeScript example, including type, constant, number, and boolean colors, search matches, selections, and terminal ANSI red, green, yellow, blue, magenta, and cyan. The optional Rust semantic settings and uninstallation were not tested. The exact tested commit is recorded in [PUBLISHING.md](PUBLISHING.md).
 
 ## Install
 
@@ -59,6 +61,6 @@ Support depends on your Zed version and language server. The example does not gu
 
 ## Publishing and license
 
-See [PUBLISHING.md](PUBLISHING.md) for the remaining manual verification and official registry submission steps. This repository has no submitted registry pull request.
+See [PUBLISHING.md](PUBLISHING.md) for the submitted registry PR, desktop verification scope, and publishing workflow.
 
 [MIT](LICENSE) © 2026 Anubis.

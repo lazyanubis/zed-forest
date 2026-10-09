@@ -6,7 +6,7 @@
 - Use blue-gray `#23303e` for read-reference highlights, distinct from the green selection `#17362e`.
 - Brighten terminal ANSI red from `#af6e86` to `#bd8395` for clearer red output.
 
-The README image remains a 0.1.0 web preview. Desktop verification of this release is still pending.
+The README image remains a 0.1.0 web preview. The desktop checks completed on 2026-10-09 and the untested Rust settings and uninstallation are recorded in [PUBLISHING.md](PUBLISHING.md).
 
 ## 0.1.0
 

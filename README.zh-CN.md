@@ -4,11 +4,13 @@
 
 适用于 [Zed](https://zed.dev) 的墨绿色主题。关键字采用青色，类型采用黄绿色，常量、数字和布尔值分别使用不同颜色。扩展提供一个名为 **Forest** 的深色主题。
 
-**当前状态：** 0.1.1，可通过开发扩展方式安装，尚未上架 Zed 官方扩展目录。对比度改善见[更新记录](CHANGELOG.md)。
+**当前状态：** 0.1.1，可通过开发扩展方式安装。[官方目录 PR #7928](https://github.com/zed-industries/extensions/pull/7928) 已提交，正在等待审核，尚未上架 Zed 官方扩展目录。对比度改善见[更新记录](CHANGELOG.md)。
 
 ![Forest 在 Zed Theme Builder 中的预览](preview.jpg)
 
-截图为 0.1.0 版本的网页 Theme Builder 预览，尚未包含 0.1.1 的对比度改善。网页预览无法完整反映桌面端的语法分类、字重和语言服务器语义高亮；目前尚未在桌面 Zed 中人工验证安装及渲染效果。
+截图为 0.1.0 版本的网页 Theme Builder 预览，尚未包含 0.1.1 的对比度改善。网页预览无法完整反映桌面端的语法分类、字重和语言服务器语义高亮。
+
+2026-10-09，仓库所有者在 macOS 的 Zed 1.23.2 中手动安装并选择了 Forest 0.1.1。随后通过计算机辅助界面操作检查了 JSON 和独立 TypeScript 示例，包括类型、常量、数字和布尔配色、搜索命中、选区，以及终端 ANSI 红、绿、黄、蓝、紫、青。Rust 可选语义设置和卸载流程尚未测试。已测试的精确提交记录在 [PUBLISHING.md](PUBLISHING.md)。
 
 ## 安装
 
@@ -59,6 +61,6 @@ git clone https://github.com/lazyanubis/zed-forest.git
 
 ## 发布与许可
 
-剩余人工验证及官方目录提交步骤见 [PUBLISHING.md](PUBLISHING.md)。本仓库尚未向官方目录提交发布 PR。
+已提交的官方目录 PR、桌面验证范围及发布流程见 [PUBLISHING.md](PUBLISHING.md)。
 
 [MIT](LICENSE) © 2026 Anubis。
