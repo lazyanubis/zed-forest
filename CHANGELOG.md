@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.3
+
+- Make the local text selection visible against the dark editor and active-line backgrounds by changing `players[0].selection` from `#17362e` to `#2c5a48`. The previous selection was too close to those backgrounds.
+- Preserve syntax colors and all other theme properties. The brighter selection improves its visibility while reducing selected-text contrast; desktop verification of this version is pending.
+
 ## 0.1.2
 
 - Render regular and documentation comments upright, fixing the difference between the web preview and the installed theme without requiring a local theme override.

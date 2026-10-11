@@ -4,7 +4,7 @@
 
 适用于 [Zed](https://zed.dev) 的墨绿色主题。关键字采用青色，类型采用黄绿色，常量、数字和布尔值分别使用不同颜色。扩展提供一个名为 **Forest** 的深色主题。
 
-**当前状态：** 0.1.2，可通过开发扩展方式安装。[官方目录 PR #7928](https://github.com/zed-industries/extensions/pull/7928) 正在等待审核，尚未上架 Zed 官方扩展目录。字体样式和对比度调整见[更新记录](CHANGELOG.md)。
+**当前状态：** 0.1.3，可通过开发扩展方式安装。[官方目录 PR #7928](https://github.com/zed-industries/extensions/pull/7928) 正在等待审核，尚未上架 Zed 官方扩展目录。选区、字体样式和对比度调整见[更新记录](CHANGELOG.md)。
 
 ![Forest 0.1.2 在 Zed 中的实际效果](preview-native.jpg)
 
