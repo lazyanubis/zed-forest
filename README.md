@@ -6,6 +6,10 @@ A deep forest green theme for [Zed](https://zed.dev), with teal keywords, yellow
 
 **Status:** version 0.1.3, available as a development extension. [Registry PR #7928](https://github.com/zed-industries/extensions/pull/7928) is awaiting review; Forest is not yet published in the official Zed extension registry. See the [changelog](CHANGELOG.md) for the selection, typography, and contrast changes.
 
+![Forest 0.1.3 selection in Zed's rendered Markdown preview](preview-selection.png)
+
+Forest 0.1.3 makes selections visible in source editors and rendered Markdown previews. This screenshot was captured in Zed 1.23.2 on macOS on 2026-10-11 and shows a selection across Chinese text and bold **Forest** on consecutive lines. The installed development extension was rebuilt; the source editor retained Lilex at 16 px, with no local theme override. The source selection also remained distinguishable when focus moved to an empty search field. See [PUBLISHING.md](PUBLISHING.md) for the exact verification scope.
+
 ![Forest 0.1.2 in Zed](preview-native.jpg)
 
 This cropped code-area screenshot shows Forest 0.1.2 in Zed 1.23.2 on macOS, using Lilex at 12 px, weight 400, and approximately 20 px line height. It uses [this TypeScript example](examples/forest.ts), with no local Forest theme override. The [original web preview](preview.jpg) remains available for comparison.

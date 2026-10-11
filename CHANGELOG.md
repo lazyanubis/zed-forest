@@ -4,7 +4,8 @@
 
 - Make source-editor text selections visible against the dark editor and active-line backgrounds by changing `players[0].selection` from `#17362e` to `#2c5a48`.
 - Set `element.selection_background` explicitly to `#2c5a48` for selections in rendered Markdown previews. Without this field, Zed 1.23.2 reduces the opaque local selection color to 25% opacity, making the preview selection difficult to see.
-- Preserve syntax colors and all unrelated theme properties. The brighter selections improve visibility while reducing selected-code contrast; desktop verification of the final two-field fix is pending.
+- Preserve syntax colors and all unrelated theme properties. The brighter selections improve visibility while reducing selected-code contrast.
+- Verify the fix in Zed 1.23.2 on macOS on 2026-10-11: Chinese source-text selections and continuous multiline selections in rendered Markdown, including bold text, are visible. A source selection remains distinguishable when focus moves to the search field with an empty query.
 
 ## 0.1.2
 

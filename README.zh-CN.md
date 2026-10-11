@@ -6,6 +6,10 @@
 
 **当前状态：** 0.1.3，可通过开发扩展方式安装。[官方目录 PR #7928](https://github.com/zed-industries/extensions/pull/7928) 正在等待审核，尚未上架 Zed 官方扩展目录。选区、字体样式和对比度调整见[更新记录](CHANGELOG.md)。
 
+![Forest 0.1.3 在 Zed Markdown 渲染预览中的选区](preview-selection.png)
+
+Forest 0.1.3 修复了源码编辑器和 Markdown 渲染预览中选区难以辨认的问题。这张截图于 2026-10-11 在 macOS 的 Zed 1.23.2 中拍摄，展示了连续跨行的中文及粗体 **Forest** 选择效果。检查前重建了已安装的开发扩展；源码编辑器保留原有 Lilex、16 px 设置，没有本地主题覆盖。同窗焦点移到空搜索框后，源码选区仍可辨认。具体验证范围见 [PUBLISHING.md](PUBLISHING.md)。
+
 ![Forest 0.1.2 在 Zed 中的实际效果](preview-native.jpg)
 
 这是 macOS 的 Zed 1.23.2 中 Forest 0.1.2 的代码区域截图，使用 Lilex、12 px、400 字重、约 20 px 行高。代码来自[此 TypeScript 示例](examples/forest.ts)，没有本地 Forest 主题覆盖。[原始网页预览](preview.jpg) 保留供对照。

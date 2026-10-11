@@ -2,19 +2,21 @@
 
 Forest has been submitted in [registry PR #7928](https://github.com/zed-industries/extensions/pull/7928) and is awaiting review. It is not yet listed in the official Zed extension registry.
 
-Version 0.1.3 fixes text selections being difficult to see in source editors and rendered Markdown previews. Desktop verification of the final two-field fix is pending; the registry entry must reference its exact tested theme commit once verification is complete. The optional Lilex settings are personal editor settings; the extension neither installs the font nor applies those settings.
+Version 0.1.3 fixes text selections being difficult to see in source editors and rendered Markdown previews. The desktop checks described below are complete; the registry entry must reference a public commit containing the verified theme file and manifest version 0.1.3. The optional Lilex settings are personal editor settings; the extension neither installs the font nor applies those settings.
 
 ## Desktop verification
 
-### 0.1.3 — pending
+### 0.1.3 — verified on 2026-10-11
 
-The candidate changes `players[0].selection` from `#17362e` to `#2c5a48` and adds `element.selection_background: "#2c5a48"`. Syntax colors and all unrelated theme properties are unchanged. The source-editor selection-to-background contrast increases from 1.206:1 to 2.004:1; against the active-line background it increases from 1.075:1 to 1.786:1. This deliberately prioritizes seeing the selection over retaining 4.5:1 for every selected syntax color.
+The theme changes `players[0].selection` from `#17362e` to `#2c5a48` and adds `element.selection_background: "#2c5a48"`. Syntax colors and all unrelated theme properties are unchanged. The source-editor selection-to-background contrast increases from 1.206:1 to 2.004:1; against the active-line background it increases from 1.075:1 to 1.786:1. This deliberately prioritizes seeing the selection over retaining 4.5:1 for every selected syntax color.
 
 The preview-specific field is necessary because Zed 1.23.2 [reads it for rendered Markdown selections](https://github.com/zed-industries/zed/blob/v1.23.2/crates/markdown/src/markdown.rs#L243). When it is absent, Zed's [fallback reduces an opaque local selection to 25% opacity](https://github.com/zed-industries/zed/blob/v1.23.2/crates/theme/src/fallback_themes.rs#L47). The [theme settings parser explicitly supports `element.selection_background`](https://github.com/zed-industries/zed/blob/v1.23.2/crates/settings_content/src/theme.rs#L642), even though the published theme schema does not yet list it.
 
-The first source-editor-only candidate was checked in the desktop app: source selections became clearer, but rendered Markdown preview selections remained dark. The final candidate adds the explicit preview field; its desktop installation and preview selection visibility have not yet been confirmed in this release record. Add the app version, test date, selection observations, and tested commit after that check.
+On 2026-10-11, the installed development extension was rebuilt in Zed 1.23.2 on macOS using the theme from commit [`ce4a4a0`](https://github.com/lazyanubis/zed-forest/commit/ce4a4a0). Computer-assisted UI inspection checked Chinese paragraphs in `README.zh-CN.md`: selections were distinguishable in the source editor, and a continuous selection spanning multiple rendered lines and bold **Forest** was clear in the Markdown preview. The [preview screenshot](preview-selection.png) records the latter check.
 
-The final candidate `themes/forest.json` SHA-256 is `36492e4d93ef52939e4530bf9204dce57846a7e6f930ad5876459e6a98efea27`. JSON parsing and the two selection fields have been checked.
+With focus moved to the search field in the same window and the query cleared, the source selection became dimmer but remained distinguishable. The existing editor font was Lilex at 16 px; there were no `theme_overrides`, and the check did not change font settings or syntax colors. Read-only views, grayscale display modes, and multi-user collaboration were not tested.
+
+The verified `themes/forest.json` SHA-256 is `36492e4d93ef52939e4530bf9204dce57846a7e6f930ad5876459e6a98efea27`. JSON parsing and the two selection fields have also been checked. An earlier source-editor-only candidate improved source selections but left Markdown preview selections dark; the verified file includes the explicit preview field.
 
 ### Previous desktop checks
 
